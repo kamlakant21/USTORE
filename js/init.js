@@ -1,10 +1,11 @@
 $(function () {
-  loadscript("/js/categories.js", categoriesSetup);
-  loadscript("/js/products.js", productsSetup);
+  loadscript("categories.js", categoriesSetup);
+  loadscript("products.js", productsSetup);
 });
 
 var categoriesSetup = function () {
-  console.log("category here");
+  let categories = new Categories();
+  categories.getAllCategories();
 };
 
 var productsSetup = function () {
