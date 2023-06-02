@@ -1,6 +1,6 @@
 $(function () {
-  loadscript("categories.js", categoriesSetup);
-  loadscript("products.js", productsSetup);
+  loadScript("js/categories.js", categoriesSetup);
+  loadScript("js/products.js", productsSetup);
 });
 
 var categoriesSetup = function () {
@@ -20,4 +20,10 @@ function loadscript(url, callback) {
   script.onreadystatechange = callback;
   script.onload = callback;
   head.appendChild(script);
+}
+
+function toTitleCase(str) {
+  return str.replace(/(?:^|\s)\w/g, function (match) {
+    return match.toUpperCase();
+  });
 }
