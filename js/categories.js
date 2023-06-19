@@ -45,7 +45,7 @@ class Categories {
               product.image +
               '" class="img-fluid"></div><div class="info"><div class="title">' +
               product.title +
-              "<br>$" +
+              "<br>₹" +
               product.price +
               "</div></div></a></div></div>"
           );

@@ -17,7 +17,7 @@ class Products {
               product.image +
               '" class="img-fluid"></div><div class="info"><div class="title">' +
               product.title +
-              "<br>$" +
+              "<br>₹" +
               product.price +
               "</div></div></a></div></div>"
           );
@@ -43,7 +43,7 @@ class Products {
           '<img src="' + data.image + '" class="img-fluid">'
         );
         $(".product_title").html(data.title);
-        $(".product_price").html("$" + data.price.toFixed(2));
+        $(".product_price").html("₹" + data.price.toFixed(2));
         $(".product_description").html("<p>" + data.description + "</p>");
       },
     });
