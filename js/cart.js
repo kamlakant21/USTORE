@@ -58,7 +58,7 @@ class Cart {
           product.image +
           '" class="img-thumbnail" style="max-width:50px;"><div><h6>' +
           product.title +
-          '</h6></div> <span class="text-muted">$' +
+          '</h6></div> <span class="text-muted">₹' +
           product.price.toFixed(2) +
           "</span> </li>"
       );
